@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Test
+    sass:
+      .first
+        font-size: 1.2em
+      .red
+        color: red
+  body
+    h1.first The time is now #{Time.now}
+    p
+    = Time.now
+      | (in the paragraph, with a trailing space)
+    .red
+      p
+      	| Luis Garcia
